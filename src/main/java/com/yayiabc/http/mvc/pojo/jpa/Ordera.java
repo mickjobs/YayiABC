@@ -48,7 +48,6 @@ public class Ordera extends BasePojo {
 
 	private List<Comment> commentList;
 
-
 	public List<OrderItem> getOrderitemList() {
 		return orderitemList;
 	}
@@ -213,17 +212,15 @@ public class Ordera extends BasePojo {
 		super();
 	}
 
-	public Ordera(String orderId, User user, Integer actualPay,
-			Integer payType, String postFee, Date paymentTime,
-			Date consignTime, Date endTime, Date closeTime,
-			String buyerMessage, String buyerNick, Integer buyerRate,
-			Integer state, String shippingName, String shippingCode,
-			String invoiceHand, Integer isRegister, Integer giveQb,
-			String refundInfo, List<OrderItem> orderitemList,
+	public Ordera(String orderId, Integer actualPay, Integer payType,
+			String postFee, Date paymentTime, Date consignTime, Date endTime,
+			Date closeTime, String buyerMessage, String buyerNick,
+			Integer buyerRate, Integer state, String shippingName,
+			String shippingCode, String invoiceHand, Integer isRegister,
+			Integer giveQb, String refundInfo, List<OrderItem> orderitemList,
 			List<Comment> commentList) {
 		super();
 		this.orderId = orderId;
-
 		this.actualPay = actualPay;
 		this.payType = payType;
 		this.postFee = postFee;
@@ -247,8 +244,8 @@ public class Ordera extends BasePojo {
 
 	@Override
 	public String toString() {
-		return "Ordera [orderId=" + orderId + ", actualPay="
-				+ actualPay + ", payType=" + payType + ", postFee=" + postFee
+		return "Ordera [orderId=" + orderId + ", actualPay=" + actualPay
+				+ ", payType=" + payType + ", postFee=" + postFee
 				+ ", paymentTime=" + paymentTime + ", consignTime="
 				+ consignTime + ", endTime=" + endTime + ", closeTime="
 				+ closeTime + ", buyerMessage=" + buyerMessage + ", buyerNick="

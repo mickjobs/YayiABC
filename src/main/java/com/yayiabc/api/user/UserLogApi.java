@@ -10,7 +10,7 @@ public interface UserLogApi {
      * @apiVersion 0.1.0
      * @apiDescription 注册
      *
-     * @apiParam {String} phoneNumber 手机号码（必须，11位手机号码，可作为登录名）
+     * @apiParam {String} phone 手机号码（必须，11位手机号码，可作为登录名）
      * @apiParam {String} password 密码（必须）
      * @apiParam {String} code 短信验证码（必须）
      * @apiSuccessExample Success-Response:
@@ -19,7 +19,7 @@ public interface UserLogApi {
      *  callStatus:"SUCCEED",
      *  errorCode:"No_Error",
      *  data:null,
-     *  token:null,
+     *  token:"SK1d7a4fe3-c2cd-417f-8f6f-bf7412592996",
      *  numberPerPage:0,
      *  currentPage:0,
      *  totalNumber:0,
@@ -52,7 +52,7 @@ public interface UserLogApi {
      * @apiVersion 0.1.0
      * @apiDescription 获取验证码
      *
-     * @apiParam {String} phoneNumber 手机号码（必须，11位手机号码，可作为登录名）
+     * @apiParam {String} phone 手机号码（必须，11位手机号码，可作为登录名）
      *
      * @apiSuccessExample Success-Response:
      *  HTTP/1.1 200 OK
@@ -161,7 +161,7 @@ public interface UserLogApi {
      * @apiVersion 0.1.0
      * @apiDescription 密码登录
      *
-     * @apiParam {String} phoneNumber 手机号码（必须，11位手机号码，可作为登录名）
+     * @apiParam {String} phone 手机号码（必须，11位手机号码，可作为登录名）
      * @apiParam {String} password 密码（必须）
      *
      * @apiSuccessExample Success-Response:
@@ -185,7 +185,7 @@ public interface UserLogApi {
      *      isBand  : 1,
      *      bindUserNum :30,
      *      reflect :null,
-     *      bindUser :null,
+     *      saleInfo :"wangwu",
      *      certification null,
      *      recieverList:null,
      *      orderaList :null,
@@ -234,7 +234,6 @@ public interface UserLogApi {
      * @apiVersion 0.1.0
      * @apiDescription 退出登录
      *
-     * @apiParam {String} phoneNumber 手机号码（必须，11位手机号码，可作为登录名）
      * @apiParam {String} token 身份验证（必须）
      *
      * @apiSuccessExample Success-Response:
@@ -270,16 +269,15 @@ public interface UserLogApi {
      */
 	
 	 /**
-     * @api {post} http://localhost:8080/yayiabc/api/user/forgetPwd 忘记密码
+     * @api {post} http://localhost:8080/yayiabc/api/user/forgetPwd 忘记密码登录
      * @apiName forgetPwd
      * @apiGroup userLog
      * @apiVersion 0.1.0
      * @apiDescription 忘记密码
      *
      * @apiParam {String} password 新密码（必须）
-     * @apiParam {String} phoneNumber 手机号码（必须）
+     * @apiParam {String} phone 手机号码（必须）
      * @apiParam {String} code 短信验证码（必须）
-     * @apiParam {String} token 身份验证（必须）
      *
      * @apiSuccessExample Success-Response:
      *  HTTP/1.1 200 OK
@@ -287,7 +285,7 @@ public interface UserLogApi {
      * callStatus:"SUCCEED",
      * errorCode:"No_Error",
      * data:null,
-     * token:null,
+     * token:"SK1d7a4fe3-c2cd-417f-8f6f-bf7412592996",
      * numberPerPage:0,
      * currentPage:0,
      * totalNumber:0,

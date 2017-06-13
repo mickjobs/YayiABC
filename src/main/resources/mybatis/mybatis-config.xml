@@ -10,8 +10,8 @@
 		<!-- 二级缓存的总开关，被redis替代 -->
 		<setting name="cacheEnabled" value="false" />
 	</settings>
-<!-- 
-	<plugins>
+
+	<!-- <plugins>
 		分页插件：com.github.pagehelper为PageHelper类所在包名
 		<plugin interceptor="com.github.pagehelper.PageHelper">
 			方言
@@ -28,6 +28,6 @@
 			通用Mapper接口，多个通用接口用逗号隔开
 			<property name="mappers" value="com.jt.common.mapper.SysMapper" />
 		</plugin>
-	</plugins>
- -->
+	</plugins> -->
+
 </configuration>

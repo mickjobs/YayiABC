@@ -18,8 +18,6 @@ public class User extends BasePojo {
 
 	private String trueName;
 
-	private String idCard;
-
 	private Integer sex;
 
 	private String userPic;
@@ -28,15 +26,7 @@ public class User extends BasePojo {
 
 	private String qq;
 
-	private String address;
-
-	private Integer money;
-
-	private Integer isBind;
-
 	private Integer bindUserNum;
-
-	private User bindUser;
 
 	private String reflect;
 
@@ -49,6 +39,8 @@ public class User extends BasePojo {
 	// private List<Refund> refundList;
 
 	private Cart cart;
+
+	private SaleInfo saleinfo;
 
 	private List<Comment> commentList;
 
@@ -110,14 +102,6 @@ public class User extends BasePojo {
 		this.trueName = trueName == null ? null : trueName.trim();
 	}
 
-	public String getIdCard() {
-		return idCard;
-	}
-
-	public void setIdCard(String idCard) {
-		this.idCard = idCard == null ? null : idCard.trim();
-	}
-
 	public Integer getSex() {
 		return sex;
 	}
@@ -148,30 +132,6 @@ public class User extends BasePojo {
 
 	public void setQq(String qq) {
 		this.qq = qq == null ? null : qq.trim();
-	}
-
-	public String getAddress() {
-		return address;
-	}
-
-	public void setAddress(String address) {
-		this.address = address == null ? null : address.trim();
-	}
-
-	public Integer getMoney() {
-		return money;
-	}
-
-	public void setMoney(Integer money) {
-		this.money = money;
-	}
-
-	public Integer getIsBind() {
-		return isBind;
-	}
-
-	public void setIsBind(Integer isBind) {
-		this.isBind = isBind;
 	}
 
 	public Integer getBindUserNum() {
@@ -214,14 +174,6 @@ public class User extends BasePojo {
 		this.commentList = commentList;
 	}
 
-	public User getBindUser() {
-		return bindUser;
-	}
-
-	public void setBindUser(User bindUser) {
-		this.bindUser = bindUser;
-	}
-
 	public Certification getCertification() {
 		return certification;
 	}
@@ -230,38 +182,41 @@ public class User extends BasePojo {
 		this.certification = certification;
 	}
 
+	public SaleInfo getSaleinfo() {
+		return saleinfo;
+	}
+
+	public void setSaleinfo(SaleInfo saleinfo) {
+		this.saleinfo = saleinfo;
+	}
+
 	public User() {
 		super();
 	}
 
 	public User(String userId, String phone, String pwd, Integer identity,
-			String trueName, String idCard, Integer sex, String userPic,
-			Date birthday, String qq, String address, Integer money,
-			Integer isBind, Integer bindUserNum, User bindUser, String reflect,
+			String trueName, Integer sex, String userPic, Date birthday,
+			String qq, Integer bindUserNum, String reflect,
 			Certification certification, List<Receiver> receiverList,
-			List<Ordera> orderaList, Cart cart, List<Comment> commentList,
-			List<ItemStar> itemstarList) {
+			List<Ordera> orderaList, Cart cart, SaleInfo saleinfo,
+			List<Comment> commentList, List<ItemStar> itemstarList) {
 		super();
 		this.userId = userId;
 		this.phone = phone;
 		this.pwd = pwd;
 		this.identity = identity;
 		this.trueName = trueName;
-		this.idCard = idCard;
 		this.sex = sex;
 		this.userPic = userPic;
 		this.birthday = birthday;
 		this.qq = qq;
-		this.address = address;
-		this.money = money;
-		this.isBind = isBind;
 		this.bindUserNum = bindUserNum;
-		this.bindUser = bindUser;
 		this.reflect = reflect;
 		this.certification = certification;
 		this.receiverList = receiverList;
 		this.orderaList = orderaList;
 		this.cart = cart;
+		this.saleinfo = saleinfo;
 		this.commentList = commentList;
 		this.itemstarList = itemstarList;
 	}
@@ -270,13 +225,11 @@ public class User extends BasePojo {
 	public String toString() {
 		return "User [userId=" + userId + ", phone=" + phone + ", pwd=" + pwd
 				+ ", identity=" + identity + ", trueName=" + trueName
-				+ ", idCard=" + idCard + ", sex=" + sex + ", userPic="
-				+ userPic + ", birthday=" + birthday + ", qq=" + qq
-				+ ", address=" + address + ", money=" + money + ", isBind="
-				+ isBind + ", bindUserNum=" + bindUserNum + ", bindUser="
-				+ bindUser + ", reflect=" + reflect + ", certification="
-				+ certification + ", receiverList=" + receiverList
-				+ ", orderaList=" + orderaList + ", cart=" + cart
+				+ ", sex=" + sex + ", userPic=" + userPic + ", birthday="
+				+ birthday + ", qq=" + qq + ", bindUserNum=" + bindUserNum
+				+ ", reflect=" + reflect + ", certification=" + certification
+				+ ", receiverList=" + receiverList + ", orderaList="
+				+ orderaList + ", cart=" + cart + ", saleinfo=" + saleinfo
 				+ ", commentList=" + commentList + ", itemstarList="
 				+ itemstarList + "]";
 	}

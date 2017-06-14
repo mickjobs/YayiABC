@@ -6,14 +6,35 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
-
+    
 	<!-- MVC注解驱动 -->
 	<mvc:annotation-driven/>
-
+    
 	<!-- 配置扫描器，使得@Controller注解生效 -->
-	<context:component-scan base-package="com.yayiabc.http.mvc.controller" />
+	<context:component-scan base-package="com.yayiabc.http.mvc.controller.*" />
     <!-- 处理静态资源被“/”所拦截的问题 -->
 	<mvc:default-servlet-handler />
+	
+	<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/>
+    
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
+        <property name="messageConverters">
+            <list>
+                <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"/>
+                <bean class="org.springframework.http.converter.FormHttpMessageConverter"/>
+            </list>
+        </property>
+    </bean>
+    
+    
+
+    <!-- 配置视图解析器，把控制器的逻辑视频映射为真正的视图 -->
+    <bean class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+        <property name="prefix" value="/WEB-INF/page/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+    
 	<!-- 定义文件上传解析器 -->
 	<bean id="multipartResolver"
 		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">

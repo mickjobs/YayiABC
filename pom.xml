@@ -95,7 +95,7 @@
 			<version>${mysql.version}</version>
 		</dependency>
 		
-		<!-- https://mvnrepository.com/artifact/com.alibaba/druid -->
+		<!-- https://mvnrepository.com/artifact/com.alibaba/druid,连接池 -->
 		<dependency>
         <groupId>com.alibaba</groupId>
       		<artifactId>druid</artifactId>
@@ -121,12 +121,6 @@
 			<version>${jsqlparser.version}</version>
 		</dependency>
 
-		<!-- 连接池 -->
-		<dependency>
-			<groupId>com.jolbox</groupId>
-			<artifactId>bonecp-spring</artifactId>
-			<version>${bonecp-spring.version}</version>
-		</dependency>
 
 		<dependency>
 			<groupId>org.slf4j</groupId>

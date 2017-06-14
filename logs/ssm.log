@@ -5046,3 +5046,556 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 [INFO] [2017-06-14 11:36:56][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/api/user/getVerifyCode],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.yayiabc.common.utils.DataWrapper<java.lang.Void> com.yayiabc.http.mvc.controller.userController.UserController.getVerifyCode(java.lang.String)
 [INFO] [2017-06-14 11:36:56][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'springmvc-web-servlet': startup date [Wed Jun 14 11:36:55 GMT+08:00 2017]; parent: Root WebApplicationContext
 [INFO] [2017-06-14 11:36:56][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'springmvc-web': initialization completed in 1219 ms
+[INFO] [2017-06-14 13:29:10][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO] [2017-06-14 13:29:10][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Wed Jun 14 13:29:10 GMT+08:00 2017]; root of context hierarchy
+[INFO] [2017-06-14 13:29:10][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-mybatis.xml]
+[INFO] [2017-06-14 13:29:10][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-transaction.xml]
+[INFO] [2017-06-14 13:29:10][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext.xml]
+[INFO] [2017-06-14 13:29:10][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-mybatis.xml]
+[INFO] [2017-06-14 13:29:10][org.springframework.beans.factory.support.DefaultListableBeanFactory]Overriding bean definition for bean 'propertyConfigurer': replacing [Generic bean: class [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-mybatis.xml]] with [Generic bean: class [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-mybatis.xml]]
+[INFO] [2017-06-14 13:29:10][org.springframework.beans.factory.support.DefaultListableBeanFactory]Overriding bean definition for bean 'dataSource': replacing [Generic bean: class [com.alibaba.druid.pool.DruidDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=close; defined in file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-mybatis.xml]] with [Generic bean: class [com.alibaba.druid.pool.DruidDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=close; defined in file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-mybatis.xml]]
+[INFO] [2017-06-14 13:29:10][org.springframework.beans.factory.support.DefaultListableBeanFactory]Overriding bean definition for bean 'sqlSessionFactory': replacing [Generic bean: class [org.mybatis.spring.SqlSessionFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-mybatis.xml]] with [Generic bean: class [org.mybatis.spring.SqlSessionFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-mybatis.xml]]
+[INFO] [2017-06-14 13:29:10][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-transaction.xml]
+[INFO] [2017-06-14 13:29:10][org.springframework.beans.factory.support.DefaultListableBeanFactory]Overriding bean definition for bean 'prop': replacing [Generic bean: class [org.springframework.beans.factory.config.PropertiesFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-transaction.xml]] with [Generic bean: class [org.springframework.beans.factory.config.PropertiesFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-transaction.xml]]
+[INFO] [2017-06-14 13:29:10][org.springframework.beans.factory.support.DefaultListableBeanFactory]Overriding bean definition for bean 'transactionManager': replacing [Generic bean: class [org.springframework.jdbc.datasource.DataSourceTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-transaction.xml]] with [Generic bean: class [org.springframework.jdbc.datasource.DataSourceTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-transaction.xml]]
+[INFO] [2017-06-14 13:29:10][org.springframework.beans.factory.support.DefaultListableBeanFactory]Overriding bean definition for bean 'txAdvice': replacing [Generic bean: class [org.springframework.transaction.interceptor.TransactionInterceptor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Generic bean: class [org.springframework.transaction.interceptor.TransactionInterceptor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+[INFO] [2017-06-14 13:29:10][org.springframework.beans.factory.support.DefaultListableBeanFactory]Overriding bean definition for bean 'myPointcut': replacing [Root bean: class [org.springframework.aop.aspectj.AspectJExpressionPointcut]; scope=prototype; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.aop.aspectj.AspectJExpressionPointcut]; scope=prototype; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+[INFO] [2017-06-14 13:29:10][org.springframework.beans.factory.support.DefaultListableBeanFactory]Overriding bean definition for bean 'prop': replacing [Generic bean: class [org.springframework.beans.factory.config.PropertiesFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-transaction.xml]] with [Generic bean: class [org.springframework.beans.factory.config.PropertiesFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext.xml]]
+[WARN] [2017-06-14 13:29:11][org.mybatis.spring.mapper.ClassPathMapperScanner]Skipping MapperFactoryBean with name 'userDao' and 'com.yayiabc.http.mvc.dao.userDao.UserDao' mapperInterface. Bean already defined with the same name!
+[WARN] [2017-06-14 13:29:11][org.mybatis.spring.mapper.ClassPathMapperScanner]No MyBatis mapper was found in '[com.yayiabc.http.mvc.dao]' package. Please check your configuration.
+[INFO] [2017-06-14 13:29:11][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO] [2017-06-14 13:29:11][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-14 13:29:12][org.springframework.beans.factory.config.PropertiesFactoryBean]Loading properties file from class path resource [jdbc.properties]
+[INFO] [2017-06-14 13:29:12][org.springframework.beans.factory.config.PropertiesFactoryBean]Loading properties file from class path resource [log4j.properties]
+[INFO] [2017-06-14 13:29:12][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 2128 ms
+[INFO] [2017-06-14 13:29:12][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'springmvc-web': initialization started
+[INFO] [2017-06-14 13:29:12][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'springmvc-web-servlet': startup date [Wed Jun 14 13:29:12 GMT+08:00 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-14 13:29:12][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring/springmvc-config.xml]
+[INFO] [2017-06-14 13:29:12][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-14 13:29:13][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/api/user/register],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.yayiabc.common.utils.DataWrapper<com.yayiabc.http.mvc.pojo.jpa.User> com.yayiabc.http.mvc.controller.userController.UserController.register(java.lang.String,java.lang.String,java.lang.String)
+[INFO] [2017-06-14 13:29:13][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/api/user/getVerifyCode],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.yayiabc.common.utils.DataWrapper<java.lang.Void> com.yayiabc.http.mvc.controller.userController.UserController.getVerifyCode(java.lang.String)
+[INFO] [2017-06-14 13:29:13][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/api/user/reLogin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.yayiabc.common.utils.DataWrapper<java.lang.Void> com.yayiabc.http.mvc.controller.userController.UserController.reLogin(java.lang.String)
+[INFO] [2017-06-14 13:29:13][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/api/user/pwdLogin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.yayiabc.common.utils.DataWrapper<com.yayiabc.http.mvc.pojo.jpa.User> com.yayiabc.http.mvc.controller.userController.UserController.pwdLogin(java.lang.String,java.lang.String)
+[INFO] [2017-06-14 13:29:13][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/api/user/forgetPwd],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.yayiabc.common.utils.DataWrapper<java.lang.Void> com.yayiabc.http.mvc.controller.userController.UserController.forgetPwd(java.lang.String,java.lang.String,java.lang.String)
+[INFO] [2017-06-14 13:29:13][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/api/user/noteLogin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.yayiabc.common.utils.DataWrapper<com.yayiabc.http.mvc.pojo.jpa.User> com.yayiabc.http.mvc.controller.userController.UserController.noteLogin(java.lang.String,java.lang.String)
+[INFO] [2017-06-14 13:29:13][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.1.3.Final
+[INFO] [2017-06-14 13:29:13][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'springmvc-web-servlet': startup date [Wed Jun 14 13:29:12 GMT+08:00 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-14 13:29:13][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'springmvc-web-servlet': startup date [Wed Jun 14 13:29:12 GMT+08:00 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-14 13:29:13][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO] [2017-06-14 13:29:13][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/api/user/register],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.yayiabc.common.utils.DataWrapper<com.yayiabc.http.mvc.pojo.jpa.User> com.yayiabc.http.mvc.controller.userController.UserController.register(java.lang.String,java.lang.String,java.lang.String)
+[INFO] [2017-06-14 13:29:13][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/api/user/getVerifyCode],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.yayiabc.common.utils.DataWrapper<java.lang.Void> com.yayiabc.http.mvc.controller.userController.UserController.getVerifyCode(java.lang.String)
+[INFO] [2017-06-14 13:29:13][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/api/user/reLogin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.yayiabc.common.utils.DataWrapper<java.lang.Void> com.yayiabc.http.mvc.controller.userController.UserController.reLogin(java.lang.String)
+[INFO] [2017-06-14 13:29:13][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/api/user/pwdLogin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.yayiabc.common.utils.DataWrapper<com.yayiabc.http.mvc.pojo.jpa.User> com.yayiabc.http.mvc.controller.userController.UserController.pwdLogin(java.lang.String,java.lang.String)
+[INFO] [2017-06-14 13:29:13][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/api/user/forgetPwd],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.yayiabc.common.utils.DataWrapper<java.lang.Void> com.yayiabc.http.mvc.controller.userController.UserController.forgetPwd(java.lang.String,java.lang.String,java.lang.String)
+[INFO] [2017-06-14 13:29:13][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/api/user/noteLogin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.yayiabc.common.utils.DataWrapper<com.yayiabc.http.mvc.pojo.jpa.User> com.yayiabc.http.mvc.controller.userController.UserController.noteLogin(java.lang.String,java.lang.String)
+[INFO] [2017-06-14 13:29:13][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'springmvc-web-servlet': startup date [Wed Jun 14 13:29:12 GMT+08:00 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-14 13:29:14][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'springmvc-web': initialization completed in 1355 ms
+[INFO] [2017-06-14 14:13:40][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO] [2017-06-14 14:13:40][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Wed Jun 14 14:13:40 GMT+08:00 2017]; root of context hierarchy
+[INFO] [2017-06-14 14:13:40][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-mybatis.xml]
+[INFO] [2017-06-14 14:13:40][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-transaction.xml]
+[INFO] [2017-06-14 14:13:40][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext.xml]
+[INFO] [2017-06-14 14:13:40][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-transaction.xml]
+[INFO] [2017-06-14 14:13:40][org.springframework.beans.factory.support.DefaultListableBeanFactory]Overriding bean definition for bean 'prop': replacing [Generic bean: class [org.springframework.beans.factory.config.PropertiesFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-transaction.xml]] with [Generic bean: class [org.springframework.beans.factory.config.PropertiesFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-transaction.xml]]
+[INFO] [2017-06-14 14:13:40][org.springframework.beans.factory.support.DefaultListableBeanFactory]Overriding bean definition for bean 'transactionManager': replacing [Generic bean: class [org.springframework.jdbc.datasource.DataSourceTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-transaction.xml]] with [Generic bean: class [org.springframework.jdbc.datasource.DataSourceTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-transaction.xml]]
+[INFO] [2017-06-14 14:13:40][org.springframework.beans.factory.support.DefaultListableBeanFactory]Overriding bean definition for bean 'txAdvice': replacing [Generic bean: class [org.springframework.transaction.interceptor.TransactionInterceptor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Generic bean: class [org.springframework.transaction.interceptor.TransactionInterceptor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+[INFO] [2017-06-14 14:13:40][org.springframework.beans.factory.support.DefaultListableBeanFactory]Overriding bean definition for bean 'myPointcut': replacing [Root bean: class [org.springframework.aop.aspectj.AspectJExpressionPointcut]; scope=prototype; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.aop.aspectj.AspectJExpressionPointcut]; scope=prototype; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+[INFO] [2017-06-14 14:13:40][org.springframework.beans.factory.support.DefaultListableBeanFactory]Overriding bean definition for bean 'prop': replacing [Generic bean: class [org.springframework.beans.factory.config.PropertiesFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-transaction.xml]] with [Generic bean: class [org.springframework.beans.factory.config.PropertiesFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext.xml]]
+[INFO] [2017-06-14 14:13:40][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO] [2017-06-14 14:13:40][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-14 14:13:41][org.springframework.beans.factory.config.PropertiesFactoryBean]Loading properties file from class path resource [jdbc.properties]
+[INFO] [2017-06-14 14:13:41][org.springframework.beans.factory.config.PropertiesFactoryBean]Loading properties file from class path resource [log4j.properties]
+[INFO] [2017-06-14 14:13:42][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1924 ms
+[INFO] [2017-06-14 14:13:42][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'springmvc-web': initialization started
+[INFO] [2017-06-14 14:13:42][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'springmvc-web-servlet': startup date [Wed Jun 14 14:13:42 GMT+08:00 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-14 14:13:42][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring/springmvc-config.xml]
+[INFO] [2017-06-14 14:13:42][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-14 14:13:42][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.1.3.Final
+[INFO] [2017-06-14 14:13:43][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'springmvc-web-servlet': startup date [Wed Jun 14 14:13:42 GMT+08:00 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-14 14:13:43][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'springmvc-web-servlet': startup date [Wed Jun 14 14:13:42 GMT+08:00 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-14 14:13:43][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO] [2017-06-14 14:13:43][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'springmvc-web-servlet': startup date [Wed Jun 14 14:13:42 GMT+08:00 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-14 14:13:43][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'springmvc-web': initialization completed in 1468 ms
+[INFO] [2017-06-14 14:15:13][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO] [2017-06-14 14:15:13][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Wed Jun 14 14:15:13 GMT+08:00 2017]; root of context hierarchy
+[INFO] [2017-06-14 14:15:13][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-mybatis.xml]
+[INFO] [2017-06-14 14:15:13][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-transaction.xml]
+[INFO] [2017-06-14 14:15:13][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext.xml]
+[INFO] [2017-06-14 14:15:13][org.springframework.beans.factory.support.DefaultListableBeanFactory]Overriding bean definition for bean 'prop': replacing [Generic bean: class [org.springframework.beans.factory.config.PropertiesFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-transaction.xml]] with [Generic bean: class [org.springframework.beans.factory.config.PropertiesFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext.xml]]
+[INFO] [2017-06-14 14:15:13][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO] [2017-06-14 14:15:13][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-14 14:15:14][org.springframework.beans.factory.config.PropertiesFactoryBean]Loading properties file from class path resource [jdbc.properties]
+[INFO] [2017-06-14 14:15:14][org.springframework.beans.factory.config.PropertiesFactoryBean]Loading properties file from class path resource [log4j.properties]
+[INFO] [2017-06-14 14:15:14][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1456 ms
+[INFO] [2017-06-14 14:15:14][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'springmvc-web': initialization started
+[INFO] [2017-06-14 14:15:14][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'springmvc-web-servlet': startup date [Wed Jun 14 14:15:14 GMT+08:00 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-14 14:15:14][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring/springmvc-config.xml]
+[INFO] [2017-06-14 14:15:15][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-14 14:15:15][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.1.3.Final
+[INFO] [2017-06-14 14:15:15][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'springmvc-web-servlet': startup date [Wed Jun 14 14:15:14 GMT+08:00 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-14 14:15:15][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'springmvc-web-servlet': startup date [Wed Jun 14 14:15:14 GMT+08:00 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-14 14:15:15][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO] [2017-06-14 14:15:15][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'springmvc-web-servlet': startup date [Wed Jun 14 14:15:14 GMT+08:00 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-14 14:15:15][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'springmvc-web': initialization completed in 924 ms
+[INFO] [2017-06-14 14:19:28][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO] [2017-06-14 14:19:28][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Wed Jun 14 14:19:28 GMT+08:00 2017]; root of context hierarchy
+[INFO] [2017-06-14 14:19:28][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-mybatis.xml]
+[INFO] [2017-06-14 14:19:28][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-transaction.xml]
+[INFO] [2017-06-14 14:19:28][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext.xml]
+[INFO] [2017-06-14 14:19:28][org.springframework.beans.factory.support.DefaultListableBeanFactory]Overriding bean definition for bean 'prop': replacing [Generic bean: class [org.springframework.beans.factory.config.PropertiesFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-transaction.xml]] with [Generic bean: class [org.springframework.beans.factory.config.PropertiesFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext.xml]]
+[INFO] [2017-06-14 14:19:29][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO] [2017-06-14 14:19:29][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-14 14:19:30][org.springframework.beans.factory.config.PropertiesFactoryBean]Loading properties file from class path resource [log4j.properties]
+[INFO] [2017-06-14 14:19:30][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1657 ms
+[INFO] [2017-06-14 14:19:30][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'springmvc-web': initialization started
+[INFO] [2017-06-14 14:19:30][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'springmvc-web-servlet': startup date [Wed Jun 14 14:19:30 GMT+08:00 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-14 14:19:30][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring/springmvc-config.xml]
+[INFO] [2017-06-14 14:19:30][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-14 14:19:30][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.1.3.Final
+[INFO] [2017-06-14 14:19:31][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'springmvc-web-servlet': startup date [Wed Jun 14 14:19:30 GMT+08:00 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-14 14:19:31][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'springmvc-web-servlet': startup date [Wed Jun 14 14:19:30 GMT+08:00 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-14 14:19:31][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO] [2017-06-14 14:19:31][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'springmvc-web-servlet': startup date [Wed Jun 14 14:19:30 GMT+08:00 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-14 14:19:31][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'springmvc-web': initialization completed in 1420 ms
+[INFO] [2017-06-14 14:22:06][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO] [2017-06-14 14:22:06][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Wed Jun 14 14:22:06 GMT+08:00 2017]; root of context hierarchy
+[INFO] [2017-06-14 14:22:06][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-mybatis.xml]
+[INFO] [2017-06-14 14:22:06][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-transaction.xml]
+[INFO] [2017-06-14 14:22:06][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext.xml]
+[INFO] [2017-06-14 14:22:06][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext-mybatis.xml]
+[ERROR] [2017-06-14 14:22:06][org.springframework.web.context.ContextLoader]Context initialization failed
+org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Failed to import bean definitions from URL location [classpath:/applicationContext-mybatis.xml]
+Offending resource: file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext.xml]; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [applicationContext-mybatis.xml]; nested exception is java.io.FileNotFoundException: class path resource [applicationContext-mybatis.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:70)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:85)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:76)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.importBeanDefinitionResource(DefaultBeanDefinitionDocumentReader.java:235)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseDefaultElement(DefaultBeanDefinitionDocumentReader.java:186)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:171)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:144)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:100)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:510)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:392)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:452)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [applicationContext-mybatis.xml]; nested exception is java.io.FileNotFoundException: class path resource [applicationContext-mybatis.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:344)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.importBeanDefinitionResource(DefaultBeanDefinitionDocumentReader.java:229)
+	... 29 more
+Caused by: java.io.FileNotFoundException: class path resource [applicationContext-mybatis.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:172)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:330)
+	... 33 more
+[INFO] [2017-06-14 14:22:06][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Wed Jun 14 14:22:06 GMT+08:00 2017]; root of context hierarchy
+[WARN] [2017-06-14 14:22:06][org.springframework.web.context.support.XmlWebApplicationContext]Exception thrown from ApplicationListener handling ContextClosedEvent
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: Root WebApplicationContext: startup date [Wed Jun 14 14:22:06 GMT+08:00 2017]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:344)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:331)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:836)
+	at org.springframework.web.context.ContextLoader.closeWebApplicationContext(ContextLoader.java:579)
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:115)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4980)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5626)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:160)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+[WARN] [2017-06-14 14:22:06][org.springframework.web.context.support.XmlWebApplicationContext]Exception thrown from LifecycleProcessor on context close
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: Root WebApplicationContext: startup date [Wed Jun 14 14:22:06 GMT+08:00 2017]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:357)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:836)
+	at org.springframework.web.context.ContextLoader.closeWebApplicationContext(ContextLoader.java:579)
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:115)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4980)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5626)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:160)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+[INFO] [2017-06-14 14:22:29][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO] [2017-06-14 14:22:29][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Wed Jun 14 14:22:29 GMT+08:00 2017]; root of context hierarchy
+[INFO] [2017-06-14 14:22:29][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-mybatis.xml]
+[INFO] [2017-06-14 14:22:29][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-transaction.xml]
+[INFO] [2017-06-14 14:22:29][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext.xml]
+[INFO] [2017-06-14 14:22:29][org.springframework.beans.factory.support.DefaultListableBeanFactory]Overriding bean definition for bean 'prop': replacing [Generic bean: class [org.springframework.beans.factory.config.PropertiesFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-transaction.xml]] with [Generic bean: class [org.springframework.beans.factory.config.PropertiesFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext.xml]]
+[INFO] [2017-06-14 14:22:29][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO] [2017-06-14 14:22:29][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-14 14:22:30][org.springframework.beans.factory.config.PropertiesFactoryBean]Loading properties file from class path resource [log4j.properties]
+[INFO] [2017-06-14 14:22:30][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1427 ms
+[INFO] [2017-06-14 14:22:30][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'springmvc-web': initialization started
+[INFO] [2017-06-14 14:22:30][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'springmvc-web-servlet': startup date [Wed Jun 14 14:22:30 GMT+08:00 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-14 14:22:30][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring/springmvc-config.xml]
+[INFO] [2017-06-14 14:22:30][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-14 14:22:31][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.1.3.Final
+[INFO] [2017-06-14 14:22:31][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'springmvc-web-servlet': startup date [Wed Jun 14 14:22:30 GMT+08:00 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-14 14:22:31][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'springmvc-web-servlet': startup date [Wed Jun 14 14:22:30 GMT+08:00 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-14 14:22:31][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO] [2017-06-14 14:22:31][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'springmvc-web-servlet': startup date [Wed Jun 14 14:22:30 GMT+08:00 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-14 14:22:31][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'springmvc-web': initialization completed in 1165 ms
+[INFO] [2017-06-14 14:30:36][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO] [2017-06-14 14:30:37][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Wed Jun 14 14:30:37 GMT+08:00 2017]; root of context hierarchy
+[INFO] [2017-06-14 14:30:37][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-mybatis.xml]
+[INFO] [2017-06-14 14:30:37][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-transaction.xml]
+[INFO] [2017-06-14 14:30:37][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext.xml]
+[INFO] [2017-06-14 14:30:37][org.springframework.beans.factory.support.DefaultListableBeanFactory]Overriding bean definition for bean 'prop': replacing [Generic bean: class [org.springframework.beans.factory.config.PropertiesFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-transaction.xml]] with [Generic bean: class [org.springframework.beans.factory.config.PropertiesFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext.xml]]
+[INFO] [2017-06-14 14:30:37][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO] [2017-06-14 14:30:37][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-14 14:30:38][org.springframework.beans.factory.config.PropertiesFactoryBean]Loading properties file from class path resource [log4j.properties]
+[INFO] [2017-06-14 14:30:38][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1628 ms
+[INFO] [2017-06-14 14:30:38][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'springmvc-web': initialization started
+[INFO] [2017-06-14 14:30:38][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'springmvc-web-servlet': startup date [Wed Jun 14 14:30:38 GMT+08:00 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-14 14:30:38][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring/springmvc-config.xml]
+[INFO] [2017-06-14 14:30:38][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-14 14:30:39][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.1.3.Final
+[INFO] [2017-06-14 14:30:39][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'springmvc-web-servlet': startup date [Wed Jun 14 14:30:38 GMT+08:00 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-14 14:30:39][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'springmvc-web-servlet': startup date [Wed Jun 14 14:30:38 GMT+08:00 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-14 14:30:39][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO] [2017-06-14 14:30:39][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'springmvc-web-servlet': startup date [Wed Jun 14 14:30:38 GMT+08:00 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-14 14:30:39][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'springmvc-web': initialization completed in 1000 ms
+[INFO] [2017-06-14 14:32:51][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO] [2017-06-14 14:32:51][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Wed Jun 14 14:32:51 GMT+08:00 2017]; root of context hierarchy
+[INFO] [2017-06-14 14:32:51][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-mybatis.xml]
+[INFO] [2017-06-14 14:32:51][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-transaction.xml]
+[INFO] [2017-06-14 14:32:51][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext.xml]
+[INFO] [2017-06-14 14:32:51][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext-mybatis.xml]
+[ERROR] [2017-06-14 14:32:51][org.springframework.web.context.ContextLoader]Context initialization failed
+org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Failed to import bean definitions from URL location [classpath:/applicationContext-mybatis.xml]
+Offending resource: file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext.xml]; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [applicationContext-mybatis.xml]; nested exception is java.io.FileNotFoundException: class path resource [applicationContext-mybatis.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:70)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:85)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:76)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.importBeanDefinitionResource(DefaultBeanDefinitionDocumentReader.java:235)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseDefaultElement(DefaultBeanDefinitionDocumentReader.java:186)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:171)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:144)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:100)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:510)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:392)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:452)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [applicationContext-mybatis.xml]; nested exception is java.io.FileNotFoundException: class path resource [applicationContext-mybatis.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:344)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.importBeanDefinitionResource(DefaultBeanDefinitionDocumentReader.java:229)
+	... 29 more
+Caused by: java.io.FileNotFoundException: class path resource [applicationContext-mybatis.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:172)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:330)
+	... 33 more
+[INFO] [2017-06-14 14:32:51][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Wed Jun 14 14:32:51 GMT+08:00 2017]; root of context hierarchy
+[WARN] [2017-06-14 14:32:51][org.springframework.web.context.support.XmlWebApplicationContext]Exception thrown from ApplicationListener handling ContextClosedEvent
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: Root WebApplicationContext: startup date [Wed Jun 14 14:32:51 GMT+08:00 2017]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:344)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:331)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:836)
+	at org.springframework.web.context.ContextLoader.closeWebApplicationContext(ContextLoader.java:579)
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:115)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4980)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5626)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:160)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+[WARN] [2017-06-14 14:32:51][org.springframework.web.context.support.XmlWebApplicationContext]Exception thrown from LifecycleProcessor on context close
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: Root WebApplicationContext: startup date [Wed Jun 14 14:32:51 GMT+08:00 2017]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:357)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:836)
+	at org.springframework.web.context.ContextLoader.closeWebApplicationContext(ContextLoader.java:579)
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:115)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4980)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5626)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:160)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+[INFO] [2017-06-14 14:33:06][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO] [2017-06-14 14:33:06][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Wed Jun 14 14:33:06 GMT+08:00 2017]; root of context hierarchy
+[INFO] [2017-06-14 14:33:06][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-mybatis.xml]
+[INFO] [2017-06-14 14:33:06][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-transaction.xml]
+[INFO] [2017-06-14 14:33:06][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext.xml]
+[INFO] [2017-06-14 14:33:06][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext-mybatis.xml]
+[ERROR] [2017-06-14 14:33:06][org.springframework.web.context.ContextLoader]Context initialization failed
+org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Failed to import bean definitions from URL location [classpath:/applicationContext-mybatis.xml]
+Offending resource: file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext.xml]; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [applicationContext-mybatis.xml]; nested exception is java.io.FileNotFoundException: class path resource [applicationContext-mybatis.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:70)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:85)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:76)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.importBeanDefinitionResource(DefaultBeanDefinitionDocumentReader.java:235)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseDefaultElement(DefaultBeanDefinitionDocumentReader.java:186)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:171)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:144)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:100)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:510)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:392)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:452)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [applicationContext-mybatis.xml]; nested exception is java.io.FileNotFoundException: class path resource [applicationContext-mybatis.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:344)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.importBeanDefinitionResource(DefaultBeanDefinitionDocumentReader.java:229)
+	... 29 more
+Caused by: java.io.FileNotFoundException: class path resource [applicationContext-mybatis.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:172)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:330)
+	... 33 more
+[INFO] [2017-06-14 14:33:06][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Wed Jun 14 14:33:06 GMT+08:00 2017]; root of context hierarchy
+[WARN] [2017-06-14 14:33:06][org.springframework.web.context.support.XmlWebApplicationContext]Exception thrown from ApplicationListener handling ContextClosedEvent
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: Root WebApplicationContext: startup date [Wed Jun 14 14:33:06 GMT+08:00 2017]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:344)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:331)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:836)
+	at org.springframework.web.context.ContextLoader.closeWebApplicationContext(ContextLoader.java:579)
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:115)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4980)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5626)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:160)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+[WARN] [2017-06-14 14:33:06][org.springframework.web.context.support.XmlWebApplicationContext]Exception thrown from LifecycleProcessor on context close
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: Root WebApplicationContext: startup date [Wed Jun 14 14:33:06 GMT+08:00 2017]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:357)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:836)
+	at org.springframework.web.context.ContextLoader.closeWebApplicationContext(ContextLoader.java:579)
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:115)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4980)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5626)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:160)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+[INFO] [2017-06-14 14:35:27][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO] [2017-06-14 14:35:27][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Wed Jun 14 14:35:27 GMT+08:00 2017]; root of context hierarchy
+[INFO] [2017-06-14 14:35:28][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-mybatis.xml]
+[INFO] [2017-06-14 14:35:28][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-transaction.xml]
+[INFO] [2017-06-14 14:35:28][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext.xml]
+[INFO] [2017-06-14 14:35:28][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO] [2017-06-14 14:35:28][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-14 14:35:29][org.springframework.beans.factory.config.PropertiesFactoryBean]Loading properties file from class path resource [log4j.properties]
+[INFO] [2017-06-14 14:35:29][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1587 ms
+[INFO] [2017-06-14 14:35:29][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'springmvc-web': initialization started
+[INFO] [2017-06-14 14:35:29][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'springmvc-web-servlet': startup date [Wed Jun 14 14:35:29 GMT+08:00 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-14 14:35:29][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring/springmvc-config.xml]
+[INFO] [2017-06-14 14:35:29][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-14 14:35:29][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.1.3.Final
+[INFO] [2017-06-14 14:35:30][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'springmvc-web-servlet': startup date [Wed Jun 14 14:35:29 GMT+08:00 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-14 14:35:30][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'springmvc-web-servlet': startup date [Wed Jun 14 14:35:29 GMT+08:00 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-14 14:35:30][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO] [2017-06-14 14:35:30][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'springmvc-web-servlet': startup date [Wed Jun 14 14:35:29 GMT+08:00 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-14 14:35:30][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'springmvc-web': initialization completed in 980 ms
+[INFO] [2017-06-14 14:36:37][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO] [2017-06-14 14:36:37][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Wed Jun 14 14:36:37 GMT+08:00 2017]; root of context hierarchy
+[INFO] [2017-06-14 14:36:37][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-mybatis.xml]
+[INFO] [2017-06-14 14:36:37][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext-transaction.xml]
+[INFO] [2017-06-14 14:36:37][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\toothDoctor\workspace\Yayi\target\classes\spring\applicationContext.xml]
+[INFO] [2017-06-14 14:36:38][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [jdbc.properties]
+[INFO] [2017-06-14 14:36:38][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-14 14:36:39][org.springframework.beans.factory.config.PropertiesFactoryBean]Loading properties file from class path resource [log4j.properties]
+[INFO] [2017-06-14 14:36:39][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1643 ms
+[INFO] [2017-06-14 14:36:39][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'springmvc-web': initialization started
+[INFO] [2017-06-14 14:36:39][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'springmvc-web-servlet': startup date [Wed Jun 14 14:36:39 GMT+08:00 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-14 14:36:39][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring/springmvc-config.xml]
+[INFO] [2017-06-14 14:36:39][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2017-06-14 14:36:39][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/api/user/register],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.yayiabc.common.utils.DataWrapper<com.yayiabc.http.mvc.pojo.jpa.User> com.yayiabc.http.mvc.controller.UserController.register(java.lang.String,java.lang.String,java.lang.String)
+[INFO] [2017-06-14 14:36:39][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/api/user/pwdLogin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.yayiabc.common.utils.DataWrapper<com.yayiabc.http.mvc.pojo.jpa.User> com.yayiabc.http.mvc.controller.UserController.pwdLogin(java.lang.String,java.lang.String)
+[INFO] [2017-06-14 14:36:39][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/api/user/noteLogin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.yayiabc.common.utils.DataWrapper<com.yayiabc.http.mvc.pojo.jpa.User> com.yayiabc.http.mvc.controller.UserController.noteLogin(java.lang.String,java.lang.String)
+[INFO] [2017-06-14 14:36:39][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/api/user/reLogin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.yayiabc.common.utils.DataWrapper<java.lang.Void> com.yayiabc.http.mvc.controller.UserController.reLogin(java.lang.String)
+[INFO] [2017-06-14 14:36:39][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/api/user/forgetPwd],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.yayiabc.common.utils.DataWrapper<java.lang.Void> com.yayiabc.http.mvc.controller.UserController.forgetPwd(java.lang.String,java.lang.String,java.lang.String)
+[INFO] [2017-06-14 14:36:39][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/api/user/getVerifyCode],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.yayiabc.common.utils.DataWrapper<java.lang.Void> com.yayiabc.http.mvc.controller.UserController.getVerifyCode(java.lang.String)
+[INFO] [2017-06-14 14:36:39][org.hibernate.validator.internal.util.Version]HV000001: Hibernate Validator 5.1.3.Final
+[INFO] [2017-06-14 14:36:40][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'springmvc-web-servlet': startup date [Wed Jun 14 14:36:39 GMT+08:00 2017]; parent: Root WebApplicationContext
+[INFO] [2017-06-14 14:36:40][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'springmvc-web-servlet': startup date [Wed Jun 14 14:36:39 GMT+08:00 2017]; parent: Root WebApplicationContext
+[WARN] [2017-06-14 14:36:40][org.springframework.web.context.support.XmlWebApplicationContext]Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.yayiabc.http.mvc.service.UserService com.yayiabc.http.mvc.controller.UserController.userService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.yayiabc.http.mvc.service.UserService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:762)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:663)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:629)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:677)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:548)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.yayiabc.http.mvc.service.UserService com.yayiabc.http.mvc.controller.UserController.userService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.yayiabc.http.mvc.service.UserService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:558)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 30 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.yayiabc.http.mvc.service.UserService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1308)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1054)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:949)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:530)
+	... 32 more
+[ERROR] [2017-06-14 14:36:40][org.springframework.web.servlet.DispatcherServlet]Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.yayiabc.http.mvc.service.UserService com.yayiabc.http.mvc.controller.UserController.userService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.yayiabc.http.mvc.service.UserService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:762)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:663)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:629)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:677)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:548)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.yayiabc.http.mvc.service.UserService com.yayiabc.http.mvc.controller.UserController.userService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.yayiabc.http.mvc.service.UserService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:558)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 30 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.yayiabc.http.mvc.service.UserService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1308)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1054)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:949)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:530)
+	... 32 more

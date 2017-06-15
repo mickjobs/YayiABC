@@ -7,6 +7,8 @@ package com.yayiabc.http.mvc.pojo.jpa;
 public class OrderItem extends BasePojo {
 	private String itemId;
 
+	private Ordera ordera;
+
 	private Integer qbDed;
 
 	private Integer num;
@@ -31,6 +33,14 @@ public class OrderItem extends BasePojo {
 
 	public void setQbDed(Integer qbDed) {
 		this.qbDed = qbDed;
+	}
+
+	public Ordera getOrdera() {
+		return ordera;
+	}
+
+	public void setOrdera(Ordera ordera) {
+		this.ordera = ordera;
 	}
 
 	public Integer getNum() {
@@ -69,10 +79,11 @@ public class OrderItem extends BasePojo {
 		super();
 	}
 
-	public OrderItem(String itemId, Integer qbDed, Integer num, Integer price,
-			String totalFee, String picPath) {
+	public OrderItem(String itemId, Ordera ordera, Integer qbDed, Integer num,
+			Integer price, String totalFee, String picPath) {
 		super();
 		this.itemId = itemId;
+		this.ordera = ordera;
 		this.qbDed = qbDed;
 		this.num = num;
 		this.price = price;
@@ -82,9 +93,9 @@ public class OrderItem extends BasePojo {
 
 	@Override
 	public String toString() {
-		return "OrderItem [itemId=" + itemId + ", qbDed=" + qbDed + ", num="
-				+ num + ", price=" + price + ", totalFee=" + totalFee
-				+ ", picPath=" + picPath + "]";
+		return "OrderItem [itemId=" + itemId + ", ordera=" + ordera
+				+ ", qbDed=" + qbDed + ", num=" + num + ", price=" + price
+				+ ", totalFee=" + totalFee + ", picPath=" + picPath + "]";
 	}
 
 }

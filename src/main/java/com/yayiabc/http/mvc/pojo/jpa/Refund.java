@@ -7,7 +7,9 @@ package com.yayiabc.http.mvc.pojo.jpa;
 public class Refund extends BasePojo {
 	private String refundId;
 
-	private User user;
+	private String userId;
+
+	private String itemId;
 
 	private Integer refundNum;
 
@@ -29,12 +31,20 @@ public class Refund extends BasePojo {
 		this.refundId = refundId == null ? null : refundId.trim();
 	}
 
-	public User getUser() {
-		return user;
+	public String getUserId() {
+		return userId;
 	}
 
-	public void setUser(User user) {
-		this.user = user;
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+
+	public String getItemId() {
+		return itemId;
+	}
+
+	public void setItemId(String itemId) {
+		this.itemId = itemId;
 	}
 
 	public Integer getRefundNum() {
@@ -89,12 +99,13 @@ public class Refund extends BasePojo {
 		super();
 	}
 
-	public Refund(String refundId, User user, Integer refundNum,
-			String refundReason, Integer refundMoney, String refundPic,
-			Integer state, String failReason) {
+	public Refund(String refundId, String userId, String itemId,
+			Integer refundNum, String refundReason, Integer refundMoney,
+			String refundPic, Integer state, String failReason) {
 		super();
 		this.refundId = refundId;
-		this.user = user;
+		this.userId = userId;
+		this.itemId = itemId;
 		this.refundNum = refundNum;
 		this.refundReason = refundReason;
 		this.refundMoney = refundMoney;
@@ -105,10 +116,11 @@ public class Refund extends BasePojo {
 
 	@Override
 	public String toString() {
-		return "Refund [refundId=" + refundId + ", user=" + user
-				+ ", refundNum=" + refundNum + ", refundReason=" + refundReason
-				+ ", refundMoney=" + refundMoney + ", refundPic=" + refundPic
-				+ ", state=" + state + ", failReason=" + failReason + "]";
+		return "Refund [refundId=" + refundId + ", userId=" + userId
+				+ ", itemId=" + itemId + ", refundNum=" + refundNum
+				+ ", refundReason=" + refundReason + ", refundMoney="
+				+ refundMoney + ", refundPic=" + refundPic + ", state=" + state
+				+ ", failReason=" + failReason + "]";
 	}
 
 }

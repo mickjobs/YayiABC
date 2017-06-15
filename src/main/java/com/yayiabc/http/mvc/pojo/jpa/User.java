@@ -32,19 +32,11 @@ public class User extends BasePojo {
 
 	private Certification certification;
 
-	private List<Receiver> receiverList;
-
-	private List<Ordera> orderaList;
-
 	// private List<Refund> refundList;
-
-	private Cart cart;
 
 	private SaleInfo saleinfo;
 
-	private List<Comment> commentList;
-
-	private List<ItemStar> itemstarList;
+	private List<Ordera> orderaList;
 
 	public String getUserId() {
 		return userId;
@@ -58,13 +50,7 @@ public class User extends BasePojo {
 		return reflect;
 	}
 
-	public List<ItemStar> getItemstarList() {
-		return itemstarList;
-	}
-
-	public void setItemstarList(List<ItemStar> itemstarList) {
-		this.itemstarList = itemstarList;
-	}
+	
 
 	public void setReflect(String reflect) {
 		this.reflect = reflect;
@@ -142,14 +128,9 @@ public class User extends BasePojo {
 		this.bindUserNum = bindUserNum;
 	}
 
-	public List<Receiver> getReceiverList() {
-		return receiverList;
-	}
+	
 
-	public void setReceiverList(List<Receiver> receiverList) {
-		this.receiverList = receiverList;
-	}
-
+	
 	public List<Ordera> getOrderaList() {
 		return orderaList;
 	}
@@ -158,21 +139,13 @@ public class User extends BasePojo {
 		this.orderaList = orderaList;
 	}
 
-	public Cart getCart() {
-		return cart;
-	}
+	
 
-	public void setCart(Cart cart) {
-		this.cart = cart;
-	}
+	
 
-	public List<Comment> getCommentList() {
-		return commentList;
-	}
+	
 
-	public void setCommentList(List<Comment> commentList) {
-		this.commentList = commentList;
-	}
+	
 
 	public Certification getCertification() {
 		return certification;
@@ -213,12 +186,8 @@ public class User extends BasePojo {
 		this.bindUserNum = bindUserNum;
 		this.reflect = reflect;
 		this.certification = certification;
-		this.receiverList = receiverList;
 		this.orderaList = orderaList;
-		this.cart = cart;
 		this.saleinfo = saleinfo;
-		this.commentList = commentList;
-		this.itemstarList = itemstarList;
 	}
 
 	@Override
@@ -228,10 +197,9 @@ public class User extends BasePojo {
 				+ ", sex=" + sex + ", userPic=" + userPic + ", birthday="
 				+ birthday + ", qq=" + qq + ", bindUserNum=" + bindUserNum
 				+ ", reflect=" + reflect + ", certification=" + certification
-				+ ", receiverList=" + receiverList + ", orderaList="
-				+ orderaList + ", cart=" + cart + ", saleinfo=" + saleinfo
-				+ ", commentList=" + commentList + ", itemstarList="
-				+ itemstarList + "]";
+				+ ", saleinfo=" + saleinfo + ", orderaList=" + orderaList + "]";
 	}
+
+	
 
 }

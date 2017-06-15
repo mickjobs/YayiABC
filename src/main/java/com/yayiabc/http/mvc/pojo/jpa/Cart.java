@@ -7,9 +7,11 @@ import java.util.List;
  * @author xiaojiang 购物车表
  */
 public class Cart extends BasePojo {
-	private String cartId;
+	private Integer cartId;
 
-	private List<ItemInfo> iteminfoList;
+	private String userId;
+
+	private String itemId;
 
 	private String name;
 
@@ -19,20 +21,28 @@ public class Cart extends BasePojo {
 
 	private Integer price;
 
-	public String getCartId() {
+	public Integer getCartId() {
 		return cartId;
 	}
 
-	public void setCartId(String cartId) {
-		this.cartId = cartId == null ? null : cartId.trim();
+	public void setCartId(Integer cartId) {
+		this.cartId = cartId;
 	}
 
-	public List<ItemInfo> getIteminfoList() {
-		return iteminfoList;
+	public String getUserId() {
+		return userId;
 	}
 
-	public void setIteminfoList(List<ItemInfo> iteminfoList) {
-		this.iteminfoList = iteminfoList;
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+
+	public String getItemId() {
+		return itemId;
+	}
+
+	public void setItemId(String itemId) {
+		this.itemId = itemId;
 	}
 
 	public String getName() {
@@ -71,11 +81,12 @@ public class Cart extends BasePojo {
 		super();
 	}
 
-	public Cart(String cartId, List<ItemInfo> iteminfoList, String name,
+	public Cart(Integer cartId, String userId, String itemId, String name,
 			String pic, Integer num, Integer price) {
 		super();
 		this.cartId = cartId;
-		this.iteminfoList = iteminfoList;
+		this.userId = userId;
+		this.itemId = itemId;
 		this.name = name;
 		this.pic = pic;
 		this.num = num;
@@ -84,8 +95,8 @@ public class Cart extends BasePojo {
 
 	@Override
 	public String toString() {
-		return "Cart [cartId=" + cartId + ", iteminfoList=" + iteminfoList
-				+ ", name=" + name + ", pic=" + pic + ", num=" + num
+		return "Cart [cartId=" + cartId + ", userId=" + userId + ", itemId="
+				+ itemId + ", name=" + name + ", pic=" + pic + ", num=" + num
 				+ ", price=" + price + "]";
 	}
 

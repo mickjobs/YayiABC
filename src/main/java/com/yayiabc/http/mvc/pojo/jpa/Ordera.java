@@ -44,6 +44,8 @@ public class Ordera extends BasePojo {
 
 	private String refundInfo;
 
+	private User user;
+
 	private List<OrderItem> orderitemList;
 
 	private List<Comment> commentList;
@@ -82,6 +84,14 @@ public class Ordera extends BasePojo {
 
 	public Integer getActualPay() {
 		return actualPay;
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
 	}
 
 	public void setActualPay(Integer actualPay) {
@@ -217,8 +227,8 @@ public class Ordera extends BasePojo {
 			Date closeTime, String buyerMessage, String buyerNick,
 			Integer buyerRate, Integer state, String shippingName,
 			String shippingCode, String invoiceHand, Integer isRegister,
-			Integer giveQb, String refundInfo, List<OrderItem> orderitemList,
-			List<Comment> commentList) {
+			Integer giveQb, String refundInfo, User user,
+			List<OrderItem> orderitemList, List<Comment> commentList) {
 		super();
 		this.orderId = orderId;
 		this.actualPay = actualPay;
@@ -238,6 +248,7 @@ public class Ordera extends BasePojo {
 		this.isRegister = isRegister;
 		this.giveQb = giveQb;
 		this.refundInfo = refundInfo;
+		this.user = user;
 		this.orderitemList = orderitemList;
 		this.commentList = commentList;
 	}
@@ -253,8 +264,9 @@ public class Ordera extends BasePojo {
 				+ ", shippingName=" + shippingName + ", shippingCode="
 				+ shippingCode + ", invoiceHand=" + invoiceHand
 				+ ", isRegister=" + isRegister + ", giveQb=" + giveQb
-				+ ", refundInfo=" + refundInfo + ", orderitemList="
-				+ orderitemList + ", commentList=" + commentList + "]";
+				+ ", refundInfo=" + refundInfo + ", user=" + user
+				+ ", orderitemList=" + orderitemList + ", commentList="
+				+ commentList + "]";
 	}
 
 }

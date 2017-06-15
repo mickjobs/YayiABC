@@ -11,7 +11,7 @@ public class ItemBrand extends BasePojo {
 
 	private String itemBrandLogo;
 
-	private String itemBrandClassify;
+	private String itemBrandHome;
 
 	private String itemBrandName;
 
@@ -42,13 +42,12 @@ public class ItemBrand extends BasePojo {
 				.trim();
 	}
 
-	public String getItemBrandClassify() {
-		return itemBrandClassify;
+	public String getItemBrandHome() {
+		return itemBrandHome;
 	}
 
-	public void setItemBrandClassify(String itemBrandClassify) {
-		this.itemBrandClassify = itemBrandClassify == null ? null
-				: itemBrandClassify.trim();
+	public void setItemBrandHome(String itemBrandHome) {
+		this.itemBrandHome = itemBrandHome;
 	}
 
 	public String getItemBrandName() {
@@ -65,12 +64,12 @@ public class ItemBrand extends BasePojo {
 	}
 
 	public ItemBrand(Integer itemBrandId, String itemBrandLogo,
-			String itemBrandClassify, String itemBrandName,
+			String itemBrandHome, String itemBrandName,
 			List<ItemInfo> iteminfoList) {
 		super();
 		this.itemBrandId = itemBrandId;
 		this.itemBrandLogo = itemBrandLogo;
-		this.itemBrandClassify = itemBrandClassify;
+		this.itemBrandHome = itemBrandHome;
 		this.itemBrandName = itemBrandName;
 		this.iteminfoList = iteminfoList;
 	}
@@ -78,7 +77,7 @@ public class ItemBrand extends BasePojo {
 	@Override
 	public String toString() {
 		return "ItemBrand [itemBrandId=" + itemBrandId + ", itemBrandLogo="
-				+ itemBrandLogo + ", itemBrandClassify=" + itemBrandClassify
+				+ itemBrandLogo + ", itemBrandHome=" + itemBrandHome
 				+ ", itemBrandName=" + itemBrandName + ", iteminfoList="
 				+ iteminfoList + "]";
 	}

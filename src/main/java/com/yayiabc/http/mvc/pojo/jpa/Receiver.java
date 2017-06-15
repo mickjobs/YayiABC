@@ -7,13 +7,15 @@ package com.yayiabc.http.mvc.pojo.jpa;
 public class Receiver extends BasePojo {
 	private Integer receiverId;
 
+	private String userId;
+
 	private String receiverName;
 
 	private String province;
 
 	private String city;
 
-	private String area;
+	private String county;
 
 	private String receiverDetail;
 
@@ -41,6 +43,14 @@ public class Receiver extends BasePojo {
 		return province;
 	}
 
+	public String getUserId() {
+		return userId;
+	}
+
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+
 	public void setProvince(String province) {
 		this.province = province == null ? null : province.trim();
 	}
@@ -53,12 +63,12 @@ public class Receiver extends BasePojo {
 		this.city = city == null ? null : city.trim();
 	}
 
-	public String getArea() {
-		return area;
+	public String getCounty() {
+		return county;
 	}
 
-	public void setArea(String area) {
-		this.area = area == null ? null : area.trim();
+	public void setCounty(String county) {
+		this.county = county;
 	}
 
 	public String getReceiverDetail() {
@@ -90,15 +100,16 @@ public class Receiver extends BasePojo {
 		super();
 	}
 
-	public Receiver(Integer receiverId, String receiverName, String province,
-			String city, String area, String receiverDetail, String phone,
-			Integer isDefault) {
+	public Receiver(Integer receiverId, String userId, String receiverName,
+			String province, String city, String county, String receiverDetail,
+			String phone, Integer isDefault) {
 		super();
 		this.receiverId = receiverId;
+		this.userId = userId;
 		this.receiverName = receiverName;
 		this.province = province;
 		this.city = city;
-		this.area = area;
+		this.county = county;
 		this.receiverDetail = receiverDetail;
 		this.phone = phone;
 		this.isDefault = isDefault;
@@ -106,10 +117,11 @@ public class Receiver extends BasePojo {
 
 	@Override
 	public String toString() {
-		return "Receiver [receiverId=" + receiverId + ", receiverName="
-				+ receiverName + ", province=" + province + ", city=" + city
-				+ ", area=" + area + ", receiverDetail=" + receiverDetail
-				+ ", phone=" + phone + ", isDefault=" + isDefault + "]";
+		return "Receiver [receiverId=" + receiverId + ", userId=" + userId
+				+ ", receiverName=" + receiverName + ", province=" + province
+				+ ", city=" + city + ", county=" + county + ", receiverDetail="
+				+ receiverDetail + ", phone=" + phone + ", isDefault="
+				+ isDefault + "]";
 	}
 
 }

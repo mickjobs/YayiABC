@@ -57,11 +57,12 @@
 		<property name="mapperLocations" value="classpath:mybatis/mappers/*.xml"/>
 	</bean>
 	
-	
 	<!-- 定义Mapper接口扫描器 -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<!-- 扫描mapper包 -->
 		<property name="basePackage" value="com.yayiabc.http.mvc.dao"/>
 	</bean>
+	
+	
 
 </beans>

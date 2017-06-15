@@ -11,20 +11,20 @@ public class ItemStock extends BasePojo {
 
 	private String stockName;
 
+	private String item_id;
+
 	private Integer itemStockNum;
 
 	private Integer isWarning;
 
 	private Integer warningNum;
 
-	private List<ItemInfo> iteminfoList;
-
-	public List<ItemInfo> getIteminfoList() {
-		return iteminfoList;
+	public String getItem_id() {
+		return item_id;
 	}
 
-	public void setIteminfoList(List<ItemInfo> iteminfoList) {
-		this.iteminfoList = iteminfoList;
+	public void setItem_id(String item_id) {
+		this.item_id = item_id;
 	}
 
 	public String getItemStockId() {
@@ -71,24 +71,23 @@ public class ItemStock extends BasePojo {
 		super();
 	}
 
-	public ItemStock(String itemStockId, String stockName,
-			Integer itemStockNum, Integer isWarning, Integer warningNum,
-			List<ItemInfo> iteminfoList) {
+	public ItemStock(String itemStockId, String stockName, String item_id,
+			Integer itemStockNum, Integer isWarning, Integer warningNum) {
 		super();
 		this.itemStockId = itemStockId;
 		this.stockName = stockName;
+		this.item_id = item_id;
 		this.itemStockNum = itemStockNum;
 		this.isWarning = isWarning;
 		this.warningNum = warningNum;
-		this.iteminfoList = iteminfoList;
 	}
 
 	@Override
 	public String toString() {
 		return "ItemStock [itemStockId=" + itemStockId + ", stockName="
-				+ stockName + ", itemStockNum=" + itemStockNum + ", isWarning="
-				+ isWarning + ", warningNum=" + warningNum + ", iteminfoList="
-				+ iteminfoList + "]";
+				+ stockName + ", item_id=" + item_id + ", itemStockNum="
+				+ itemStockNum + ", isWarning=" + isWarning + ", warningNum="
+				+ warningNum + "]";
 	}
 
 }

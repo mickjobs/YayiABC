@@ -7,7 +7,7 @@ package com.yayiabc.http.mvc.pojo.jpa;
 public class SaleIncome extends BasePojo {
 	private Integer saleIncomeId;
 
-	private String userId;
+	private String saleId;
 
 	private String orderId;
 
@@ -23,12 +23,12 @@ public class SaleIncome extends BasePojo {
 		this.saleIncomeId = saleIncomeId;
 	}
 
-	public String getUserId() {
-		return userId;
+	public String getSaleId() {
+		return saleId;
 	}
 
-	public void setUserId(String userId) {
-		this.userId = userId == null ? null : userId.trim();
+	public void setSaleId(String saleId) {
+		this.saleId = saleId;
 	}
 
 	public String getOrderId() {
@@ -59,11 +59,11 @@ public class SaleIncome extends BasePojo {
 		super();
 	}
 
-	public SaleIncome(Integer saleIncomeId, String userId, String orderId,
+	public SaleIncome(Integer saleIncomeId, String saleId, String orderId,
 			Integer getMoney, Integer getState) {
 		super();
 		this.saleIncomeId = saleIncomeId;
-		this.userId = userId;
+		this.saleId = saleId;
 		this.orderId = orderId;
 		this.getMoney = getMoney;
 		this.getState = getState;
@@ -71,8 +71,8 @@ public class SaleIncome extends BasePojo {
 
 	@Override
 	public String toString() {
-		return "SaleIncome [saleIncomeId=" + saleIncomeId + ", userId="
-				+ userId + ", orderId=" + orderId + ", getMoney=" + getMoney
+		return "SaleIncome [saleIncomeId=" + saleIncomeId + ", saleId="
+				+ saleId + ", orderId=" + orderId + ", getMoney=" + getMoney
 				+ ", getState=" + getState + "]";
 	}
 

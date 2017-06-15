@@ -13,10 +13,6 @@ public class ItemInfo extends BasePojo {
 
 	private ItemBrand itemBrand;
 
-	private Integer itemStockNum;
-
-	private ItemStock itemStock;
-
 	// private Refund refundId;
 
 	private Integer itemPrice;
@@ -38,14 +34,6 @@ public class ItemInfo extends BasePojo {
 	private ItemProperty itemPnamec;
 
 	private List<Comment> commentList;
-
-	public ItemStock getItemStock() {
-		return itemStock;
-	}
-
-	public void setItemStock(ItemStock itemStock) {
-		this.itemStock = itemStock;
-	}
 
 	public ItemBrand getItemBrand() {
 		return itemBrand;
@@ -103,14 +91,6 @@ public class ItemInfo extends BasePojo {
 		this.state = state;
 	}
 
-	public Integer getItemStockNum() {
-		return itemStockNum;
-	}
-
-	public void setItemStockNum(Integer itemStockNum) {
-		this.itemStockNum = itemStockNum;
-	}
-
 	public ItemClassify getOneClassify() {
 		return oneClassify;
 	}
@@ -164,17 +144,15 @@ public class ItemInfo extends BasePojo {
 	}
 
 	public ItemInfo(String itemId, String itemName, ItemBrand itemBrand,
-			Integer itemStockNum, ItemStock itemStock, Integer itemPrice,
-			Integer sales, Integer state, ItemClassify oneClassify,
-			ItemClassify twoClassify, ItemClassify threeClassify,
-			ItemProperty itemPnamea, ItemProperty itemPnameb,
-			ItemProperty itemPnamec, List<Comment> commentList) {
+			Integer itemPrice, Integer sales, Integer state,
+			ItemClassify oneClassify, ItemClassify twoClassify,
+			ItemClassify threeClassify, ItemProperty itemPnamea,
+			ItemProperty itemPnameb, ItemProperty itemPnamec,
+			List<Comment> commentList) {
 		super();
 		this.itemId = itemId;
 		this.itemName = itemName;
 		this.itemBrand = itemBrand;
-		this.itemStockNum = itemStockNum;
-		this.itemStock = itemStock;
 		this.itemPrice = itemPrice;
 		this.sales = sales;
 		this.state = state;
@@ -190,8 +168,7 @@ public class ItemInfo extends BasePojo {
 	@Override
 	public String toString() {
 		return "ItemInfo [itemId=" + itemId + ", itemName=" + itemName
-				+ ", itemBrand=" + itemBrand + ", itemStockNum=" + itemStockNum
-				+ ", itemStock=" + itemStock + ", itemPrice=" + itemPrice
+				+ ", itemBrand=" + itemBrand + ", itemPrice=" + itemPrice
 				+ ", sales=" + sales + ", state=" + state + ", oneClassify="
 				+ oneClassify + ", twoClassify=" + twoClassify
 				+ ", threeClassify=" + threeClassify + ", itemPnamea="

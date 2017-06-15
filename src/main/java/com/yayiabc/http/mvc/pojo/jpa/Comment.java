@@ -7,7 +7,11 @@ package com.yayiabc.http.mvc.pojo.jpa;
 public class Comment extends BasePojo {
 	private Integer commentId;
 
+	private String userId;
+
 	private ItemInfo itemInfo;
+
+	private Ordera ordera;
 
 	private Integer commentGrade;
 
@@ -29,6 +33,22 @@ public class Comment extends BasePojo {
 
 	public void setItemInfo(ItemInfo itemInfo) {
 		this.itemInfo = itemInfo;
+	}
+
+	public String getUserId() {
+		return userId;
+	}
+
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+
+	public Ordera getOrdera() {
+		return ordera;
+	}
+
+	public void setOrdera(Ordera ordera) {
+		this.ordera = ordera;
 	}
 
 	public Integer getCommentGrade() {
@@ -56,23 +76,27 @@ public class Comment extends BasePojo {
 		this.replyContent = replyContent == null ? null : replyContent.trim();
 	}
 
-	public Comment(Integer commentId, ItemInfo itemInfo, Integer commentGrade,
-			String commentContent, String replyContent) {
+	public Comment() {
+		super();
+	}
+
+	public Comment(Integer commentId, String userId, ItemInfo itemInfo,
+			Ordera ordera, Integer commentGrade, String commentContent,
+			String replyContent) {
 		super();
 		this.commentId = commentId;
+		this.userId = userId;
 		this.itemInfo = itemInfo;
+		this.ordera = ordera;
 		this.commentGrade = commentGrade;
 		this.commentContent = commentContent;
 		this.replyContent = replyContent;
 	}
 
-	public Comment() {
-		super();
-	}
-
 	@Override
 	public String toString() {
-		return "Comment [commentId=" + commentId + ", itemInfo=" + itemInfo
+		return "Comment [commentId=" + commentId + ", userId=" + userId
+				+ ", itemInfo=" + itemInfo + ", ordera=" + ordera
 				+ ", commentGrade=" + commentGrade + ", commentContent="
 				+ commentContent + ", replyContent=" + replyContent + "]";
 	}

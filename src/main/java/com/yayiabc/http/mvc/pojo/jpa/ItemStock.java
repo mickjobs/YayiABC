@@ -11,7 +11,7 @@ public class ItemStock extends BasePojo {
 
 	private String stockName;
 
-	private String item_id;
+	private String itemId;
 
 	private Integer itemStockNum;
 
@@ -19,12 +19,12 @@ public class ItemStock extends BasePojo {
 
 	private Integer warningNum;
 
-	public String getItem_id() {
-		return item_id;
+	public String getItemId() {
+		return itemId;
 	}
 
 	public void setItem_id(String item_id) {
-		this.item_id = item_id;
+		this.itemId = itemId;
 	}
 
 	public String getItemStockId() {
@@ -76,7 +76,7 @@ public class ItemStock extends BasePojo {
 		super();
 		this.itemStockId = itemStockId;
 		this.stockName = stockName;
-		this.item_id = item_id;
+		this.itemId = itemId;
 		this.itemStockNum = itemStockNum;
 		this.isWarning = isWarning;
 		this.warningNum = warningNum;
@@ -85,7 +85,7 @@ public class ItemStock extends BasePojo {
 	@Override
 	public String toString() {
 		return "ItemStock [itemStockId=" + itemStockId + ", stockName="
-				+ stockName + ", item_id=" + item_id + ", itemStockNum="
+				+ stockName + ", item_id=" + itemId + ", itemStockNum="
 				+ itemStockNum + ", isWarning=" + isWarning + ", warningNum="
 				+ warningNum + "]";
 	}

@@ -29,10 +29,16 @@
 		密码<input type="text" name="password"/>
 		<input type="submit" value="提交"/>
 	</form>
-	<form action="/api/user/noteLogin" method="post">
+	<form action="/api/user/forgetPwd" method="post">
 	 	<h1>忘记密码</h1>
 		手机号码<input type="text" name="phone"/>
 		验证码<input type="text" name="code"/>
+		密码<input type="text" name="password"/>
+		<input type="submit" value="提交"/>
+	</form>
+	<form action="/api/user/reLogin" method="post">
+	 	<h1>退出登录</h1>
+		<input type="text" name="token"/>
 		<input type="submit" value="提交"/>
 	</form>
  </body>
